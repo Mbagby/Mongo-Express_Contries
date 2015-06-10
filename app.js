@@ -44,7 +44,7 @@ app.post("/countries", function(req, res){
 });
 
 app.put("/countries/:id", function(req, res){
-	db.Country.findByIdAndUpdate(req.params.id, req.body.country, function(err, foundCountry){
+	db.Country.findByIdAndUpdate(req.params.id, req.body.country, function(err){
 		if(err){
         res.render("errors/404");
     	} else{
