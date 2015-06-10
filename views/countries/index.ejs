@@ -1,0 +1,29 @@
+<% include ../partials/header %>
+<h1> List of Countries </h1>
+<a href= "/countries/new"> Add new country</a>
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Capital</th>
+			<th>Population</th>
+			<th>Flag</th>
+			<th>Edit</th>
+			<th>Delete</th>
+		</tr>
+	</thead>
+<tbody>
+
+<% countries.forEach(function(country){%>
+	<tr>
+   	 	<td><a href="/countries/<%= country.id%>"><%= country.name %></a></td>
+   	 	<td><%= country.capital %></td>
+    	<td><%= country.population %></td>
+    	<td><%= country.flag %></td>
+    	<td><a href="/countries/<%= country._id %>/edit">Edit</a></td>
+    	<td><form action="/countries/<%= country._id %>?_method=delete" method= "POST"><input type="submit"></form></td>
+  	</tr>
+<% })%>
+</tbody>
+</table>
+<% include ../partials/footer %>

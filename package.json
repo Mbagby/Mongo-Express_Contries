@@ -1,0 +1,27 @@
+{
+  "name": "Mongo-Express_Contries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mbagby/Mongo-Express_Contries.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mbagby/Mongo-Express_Contries/issues"
+  },
+  "homepage": "https://github.com/Mbagby/Mongo-Express_Contries",
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "ejs": "^2.3.1",
+    "express": "^4.12.4",
+    "method-override": "^2.3.3",
+    "mongoose": "^4.0.5",
+    "morgan": "^1.5.3"
+  }
+}

@@ -1,0 +1,23 @@
+<% include ../partials/header %>
+<h1> Add a new Country </h1>
+	<form action= "/countries" method= "POST">
+		<div>
+		<label for= "name">Name</label>
+			<input type = "text" name = "country[name]" id = "name">
+		</div>
+		<div>
+		<label for= "population">Population</label>
+			<input type = "text" name = "country[population]" id = "population">
+		</div>
+		<div>
+		<label for= "capital">Capital</label>
+			<input type = "text" name = "country[capital]" id = "capital">
+		</div>
+		<div>
+		<label for= "flag">Flag</label>
+			<input type = "text" name = "country[flag]" id = "flag">
+		</div>
+		<input type="submit" value="Create">
+	</form>
+	<a href="/countries">Go Home</a>
+<% include ../partials/footer %>

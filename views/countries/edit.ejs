@@ -1,0 +1,25 @@
+<% include partials/header %>
+<h1>Edit an existing country</h1>
+<form action="/countries/<%= country.id%>?_method=put" method="POST" class="form-inline">
+  <div class="form-group">
+    <label for="name">Name: </label>
+    <input type="text" name="country[name]" id="name" class="form-control" value = "<%= country.name%>"autofocus>
+  </div>
+  <div class="form-group">
+    <label for="capital">Capital: </label>
+    <input type="text" name="country[capital]" id="capital" class="form-control" value = "<%= country.capital%>" autofocus>
+  </div>
+  <div class="form-group">
+    <label for="population">Population: </label>
+    <input type="text" name="country[population]" id="population" class="form-control" autofocus value = "<%= country.population%>">
+  </div>
+  <div class="form-group">
+    <label for="flag">Flag: </label>
+    <input type="text" name="country[flag]" id="flag" class="form-control" autofocus value = "<%= country.flag%>">
+  </div>
+  <input type="submit" value="Edit" class="btn btn-info">
+</form>
+<a href="/countries">Go home</a>
+<% include partials/footer %>
+
+
